@@ -18,7 +18,7 @@ CREATE TABLE LightSequence (id INTEGER PRIMARY KEY NOT NULL,sequence INTEGER NOT
 CREATE TABLE Camera (id INTEGER PRIMARY KEY NOT NULL,name TEXT NOT NULL)
 CREATE TABLE CameraSequence (id INTEGER PRIMARY KEY NOT NULL,sequence INTEGER NOT NULL REFERENCES KeyFrameSequence,camera INTEGER NOT NULL REFERENCES Camera)
 CREATE TABLE Float (id INTEGER PRIMARY KEY NOT NULL,value REAL NOT NULL,keyframe INTEGER NOT NULL REFERENCES KeyFrame)
-INSERT INTO "Info" VALUES(1, 'platonic-solids-moving-light', 3)
+INSERT INTO "Info" VALUES(1, 'platonic-solids-moving-light', 4)
 INSERT INTO "Container" VALUES(1, 'containers/platonic_solids.blend')
 INSERT INTO "Actor" VALUES(1, 'Ground')
 INSERT INTO "Actor" VALUES(2, 'Columns')
